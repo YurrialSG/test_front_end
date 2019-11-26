@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Artboard {
+    width: 252.5px;
+    height: 300.5px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 11.5px;
+    }
+
+.Signos {
+    width: 56px;
+    height: 21px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #41c96a;
+    margin-left: 18px;
+    margin-top: 11.5px;
+    margin-right: 178.5px;
+    margin-bottom: 14px;
+    }
+
+.Rectangle-12-Copy {
+    width: 218.5px;
+    height: 0.5px;
+    background-color: #d8d8d8;
+    margin-left: 16.5px;
+    margin-right: 17.5px;
+    margin-bottom: 14px;
+    }
+
+.Rectangle-13-Copy-1 {
+    width: 220px;
+    height: 225.5px;
+    border-radius: 4px;
+    background-image: linear-gradient(138deg, #f9b502 2%, #f17e01 100%);
+    margin: 0px 16.5px 14px 16px;
+    }
+
+.Rectangle-13-Copy-2 {
+    width: 217px;
+    height: 222px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 1.5px 1.5px 2px 1.5px;
+    }
+
+.Combined-Shape {
+    width: 15.6px;
+    height: 9px;
+    transform: rotate(-90deg);
+    border-radius: 2.5px;
+    margin-left: 26.5px;
+    margin-top: 35px;
+    margin-left: 23.9px;
+    }
+
+.aries {
+    width: 28.5px;
+    height: 26px;
+    /* background-image: linear-gradient(133deg, #f18201 -17%, #f7a502 95%); */
+    margin-right: 14.8px;
+    margin-top: 26.5px;
+    }
+
+.ries {
+    width: 42px;
+    height: 17.5px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f17f01;
+    margin-bottom: 21.5px;
+    margin-right: 24.3px;
+    }
+
+.Combined-Shape-Copy {
+    width: 15.6px;
+    height: 9px;
+    transform: rotate(-270deg);
+    border-radius: 2.5px;
+    margin-right: 25.9px;
+    margin-top: 35px;
+    }
+
+.O-trabalho-exige-de {
+    width: 163.5px;
+    height: 132px;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #000000;
+    margin-left: 27px;
+    margin-bottom: 21px;
+    margin-right: 26.5px;
+    margin-top: 16.5px;
+    }
+
+.Combined-Shape:hover, .Combined-Shape-Copy:hover {
+    cursor: pointer;
+}
