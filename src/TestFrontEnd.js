@@ -6,17 +6,26 @@ import './TestFrontEnd.css';
 function TestFrontEnd() {
 
   const [horoscopes, setHoroscopes] = useState([]);
-  const [position, setPosition] = useState(4);
+  const [position, setPosition] = useState(0);
   const [load, setLoad] = useState(false);
   const [error, setError] = useState('');
 
   const hanbleSubmitRight = () => {
-    console.log("Pressionou botão Direito")
-
+    if (position !== 11) {
+      setPosition(position + 1)
+      // console.log("Pressionou botão Direito--> Position: " + position)
+      return;
+    }
+    console.log("Não pode pressionar botão Direito")
   }
 
   const hanbleSubmitLeft = () => {
-    console.log("Pressionou botão Esquerdo")
+    if (position !== 0) {
+      setPosition(position - 1)
+      // console.log("Pressionou botão Esquerdo--> Position: " + position)
+      return;
+    }
+    console.log("Não pode pressionar botão Esquerdo")
   }
 
   useEffect(() => {
@@ -34,10 +43,17 @@ function TestFrontEnd() {
         setError(err.message);
         setLoad(true)
       })
-  }, []);
+  }, [setPosition]);
 
 
   if (load) {
+    if (error) {
+      return (
+        <div>
+          Error ao buscar dados da API
+          </div>
+      );
+    }
     return (
       <main>
         {/* {console.log(JSON.stringify(horoscopes[position]))} */}
