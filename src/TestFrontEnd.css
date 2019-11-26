@@ -1,8 +1,8 @@
-body {
+/* body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
 .Artboard {
     width: 252.5px;
@@ -119,4 +119,8 @@ body {
 
 .Combined-Shape:hover, .Combined-Shape-Copy:hover {
     cursor: pointer;
+}
+
+.block {
+    cursor: not-allowed;
 }
