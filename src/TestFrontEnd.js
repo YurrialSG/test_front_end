@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { KeyboardArrowLeft, KeyboardArrowRight } from '@material-ui/icons/';
 import axios from 'axios';
+
 import './TestFrontEnd.css';
 
 function TestFrontEnd() {
@@ -11,12 +12,16 @@ function TestFrontEnd() {
   const [load, setLoad] = useState(false);
   const [error, setError] = useState('');
 
-  const hanbleSubmitRight = () => {
+  const hanbleSubmitRight = (e) => {
+    e.preventDefault()
+
     setPosition(position + 1)
     // console.log("Pressionou botão Direito--> Position: " + position)
   }
 
-  const hanbleSubmitLeft = () => {
+  const hanbleSubmitLeft = (e) => {
+    e.preventDefault()
+
     setPosition(position - 1)
     // console.log("Pressionou botão Esquerdo--> Position: " + position)
   }
@@ -39,7 +44,6 @@ function TestFrontEnd() {
         setLoad(true)
       })
   }, [setPosition]);
-
 
   if (load) {
     if (error) {
